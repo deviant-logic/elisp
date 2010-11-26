@@ -1,6 +1,6 @@
 ;; interactive commands
 
-(defun toggle-fullscreen ()
+(defun frame-parameter-toggle-fullscreen ()
   "Switch emacs to display in full-screen mode; doesn't appear to be
 terribly mac specific."
   (interactive)
