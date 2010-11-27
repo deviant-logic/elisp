@@ -20,4 +20,9 @@
   "Add a set of commands to `hook'."
   `(add-hook ',hook (lambda () ,form ,@forms)))
 
+(defun path-from-shell ()
+  "get the value of $PATH as a list"
+  (parse-colon-path 
+   (shell-command-to-string "$SHELL -i -c \"echo -n $PATH\"")))
+
 (provide 'elisp)
