@@ -6,7 +6,7 @@
 
 (global-set-key "\M-p" (lambda () (interactive) (scroll-down 1)))
 (global-set-key "\M-n" (lambda () (interactive) (scroll-up   1)))
-(global-set-key (kbd "M-<RET>") 'toggle-fullscreen-function)
+(global-set-key (kbd "M-<RET>") toggle-fullscreen-function)
 (global-set-key "\C-a" 'toggle-bol/bti)
 
 (global-set-key "\M-'" 'insert-pair) ; see also `parens-require-spaces'
